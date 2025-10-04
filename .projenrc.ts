@@ -11,7 +11,6 @@ const project = new JsiiProject({
   homepage: "https://github.com/jessestricker/projen",
   keywords: ["projen"],
   npmAccess: NpmAccess.PUBLIC,
-  npmTrustedPublishing: true,
   packageManager: NodePackageManager.PNPM,
   packageName: "@jessestricker/projen",
   peerDeps: ["constructs@^10", "projen@>=0.97.0 <1.0.0"],
