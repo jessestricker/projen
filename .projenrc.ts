@@ -1,5 +1,6 @@
 import { ReleasableCommits } from "projen";
 import { JsiiProject } from "projen/lib/cdk";
+import { GithubCredentials } from "projen/lib/github";
 import { NodePackageManager, NpmAccess } from "projen/lib/javascript";
 
 const project = new JsiiProject({
@@ -7,6 +8,7 @@ const project = new JsiiProject({
   githubOptions: {
     mergify: false,
   },
+  projenCredentials: GithubCredentials.fromApp(),
   description: "More projects and components for projen.",
   homepage: "https://github.com/jessestricker/projen",
   keywords: ["projen"],
